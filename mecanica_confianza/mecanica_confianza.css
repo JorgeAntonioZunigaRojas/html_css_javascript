@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    background: white;
+    width: 1200px;
+    margin: 10px auto;
+}
+.cabecera{
+    background: #1551a1;
+    overflow: hidden;
+}
+.logo{
+    float: left;
+    padding: 35px 50px;
+}
+.menu{
+    float: left;
+    padding: 50px;
+}
+.opciones li{
+    float: left;
+    list-style: none;
+}
+.opciones li a{
+    text-decoration: none;
+    color: white;
+    padding: 25px;
+    border: 1px solid white;
+}
+.opciones li a:hover{
+    background: black;
+}
+.imagen_principal{
+    width: 1200px;
+    height: 400px;
+}
+.titulo{
+    text-align: center;
+    color: chocolate;
+}
+.cuerpo{
+    overflow: hidden;
+}
+.caja{
+    float: left;
+    width: 380px;
+    margin: 8px;
+    border: 1px solid;
+}
+.subtitulo{
+    background: #1551a1;
+}
+.servicios{
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+}
+.contenido{
+    text-align: justify;
+    margin: 15px;
+}
+.boton{
+    padding: 15px 20px;
+    margin: 15px 0px 0px 0px;
+    background: #1551a1;
+    color: white;
+    border-radius: 5px;
+}
+.boton:hover{
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+.pie{
+    background: #062348;
+    overflow: hidden;
+}
+.pieizquierdo{
+    float: left;
+    width: 550px;
+    padding: 20px;
+}
+.piederecho{
+    float: left;
+    width: 550px;
+    padding: 20px;
+}
+.pieizquierdo p{
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.siguenos{
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0;
+}
