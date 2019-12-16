@@ -3,10 +3,10 @@
     padding: 0;
 }
 body{
-    background: black;
+    background: #3a3d47;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.container{
+.contenedor{
     background: white;
     width: 1200px;
     margin: 10px auto;
@@ -17,11 +17,12 @@ body{
 }
 .logo{
     float: left;
-    padding: 35px 50px;
+    padding: 25px;
+    width: 250px;
 }
 .menu{
     float: left;
-    padding: 50px;
+    padding: 40px;
 }
 .opciones li{
     float: left;
@@ -30,19 +31,18 @@ body{
 .opciones li a{
     text-decoration: none;
     color: white;
-    padding: 25px;
     border: 1px solid white;
+    padding: 15px 35px;
 }
 .opciones li a:hover{
-    background: black;
+    background-color: black;
 }
 .imagen_principal{
     width: 1200px;
-    height: 400px;
 }
 .titulo{
-    text-align: center;
     color: chocolate;
+    text-align: center;
 }
 .cuerpo{
     overflow: hidden;
@@ -50,57 +50,56 @@ body{
 .caja{
     float: left;
     width: 380px;
-    margin: 8px;
+    margin: 8px 8px;
     border: 1px solid;
 }
-.subtitulo{
-    background: #1551a1;
-}
-.servicios{
-    padding: 15px 0;
-    text-align: center;
-    color: white;
-}
-.contenido{
-    text-align: justify;
-    margin: 15px;
-}
-.boton{
-    padding: 15px 20px;
-    margin: 15px 0px 0px 0px;
-    background: #1551a1;
-    color: white;
-    border-radius: 5px;
-}
-.boton:hover{
-    background: black;
-    color: white;
+.caja img:hover{
+    opacity: 0.5;
     cursor: pointer;
 }
-.pie{
-    background: #062348;
-    overflow: hidden;
-}
-.pieizquierdo{
-    float: left;
-    width: 550px;
-    padding: 20px;
-}
-.piederecho{
-    float: left;
-    width: 550px;
-    padding: 20px;
-}
-.pieizquierdo p{
+.servicio{
+    background: #1551a1;
+    padding: 10px;
     color: white;
+    text-align: center;
+}
+.contenido{
     font-size: 12px;
     padding: 10px;
     text-align: justify;
 }
-
-.siguenos{
+.boton{
+    padding: 10px 40px;
+    margin: 0px 0px 10px 0px;
+    background: #1551a1;
     color: white;
-    text-align: center;
+    border-radius: 10px;
+}
+.boton:hover{
+    cursor: pointer;
+    background: black;
+}
+.pie{
+    background: #1551a1;
+    padding: 10px;
+    overflow: hidden;
+}
+.pie_izquierdo{
+    float: left;
+    width: 580px;
+}
+.pie_derecho{
+    float: left;
+    width: 580px;
+}
+.referencias{
     font-size: 12px;
-    padding: 10px 0;
+    text-align: justify;
+    color: white;
+    padding: 10px;
+}
+.siguenos{
+    text-align: center;
+    color: white;
+    padding: 10px;
 }
