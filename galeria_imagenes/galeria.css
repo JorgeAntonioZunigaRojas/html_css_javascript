@@ -1,0 +1,66 @@
+/*Inicio del reseteo del estilos*/
+*{
+    margin-top: 0;
+    padding: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+/*Final del reseteo del estilos*/
+body{
+    font-size: 62.5%;
+}
+h1{
+    font: normal 2.4em Verdana, Geneva, sans-serif;
+    background: -webkit-linear-gradient(top, #00f, #0CF);
+    width: 35%;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px auto;
+    padding: 15px;
+    color: white;
+    box-shadow: #00f 5px 5px 10px;
+    text-shadow: white 2px 2px 5px;
+}
+h2{
+    font: bold 1.7em Verdana, Geneva, sans-serif;
+    padding: 5px 0 5px 0;
+    color: black;
+}
+section{
+    width: 91%;
+    border-top: 1px dashed #999;
+    margin: 15px auto;
+}
+
+figure{
+    float: left;
+}
+figure img{
+    padding: 4px;
+    background: #666;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out 0.1s;
+    box-shadow: #999 5px 5px 10px;
+    margin-top: 30px;
+    width: 190px;
+    height: 190px;
+}
+figure img:hover{
+    transform:scale(1.2);
+}
+figcaption{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 5px;
+}
+footer{
+    clear: both;    /*Limpia la propiedad [float: left]*/
+    padding-top: 100px;
+}
+footer p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.6em;
+    color: #666;
+    margin: 10px 8px;
+}
