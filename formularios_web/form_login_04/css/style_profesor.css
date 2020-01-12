@@ -1,0 +1,36 @@
+body {
+	background: #F3F3F3;
+	font-family: arial;
+	font-size: 16px;
+	margin: 0 auto;
+}
+#contenedor {
+	width: 480px;
+	margin: 0 auto;
+	padding: 20px;
+}
+.fila {
+	margin-bottom: 6px;
+}
+.fila span {
+	color: red;
+}
+.fila input, .fila textarea {
+	width: 100%;
+	border: none;
+	padding: 7px 6px;
+	font-size: 16px;
+	border-radius: 4px;
+}
+.fila textarea {
+	height: 100px;
+}
+.boton {
+	background: #000;
+	color: #FFF;
+	padding: 12px 18px;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 6px;
+	letter-spacing: 1px;
+}
