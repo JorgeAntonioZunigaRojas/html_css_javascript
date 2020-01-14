@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Genera Tabla</title>
+    <style>    
+        .container{
+            width: 500px;
+            background: lightblue;
+            margin: 20px auto;
+        }
+        input{
+            margin: 20px 20px 10px 20px;
+            width: 90%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        #tabla_multiplicacion{
+            background: rgb(92, 194, 228);
+            padding-left: 40%;
+        }
+    </style>
+
+    <script>
+        function generar_tabla(){
+            numero=parseInt(document.getElementById("numero").value);
+            tabla="";
+            for(i=0; i<=12; i++){
+                res=numero*i;
+                linea=String(numero)+" x "+String(i)+" = " + String(res)+"<br>";
+                tabla=tabla+linea;
+            }
+            document.getElementById("tabla_multiplicacion").innerHTML=tabla;
+            alert("Entro Tabla :): " + tabla);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="numero" placeholder="Ingrese un numero entero positivo">
+        <input type="button" value="Generar Tabla de Multiplicacion" onclick="generar_tabla()">
+        <div id="tabla_multiplicacion"></div>
+    </div>
+    
+</body>
+</html>

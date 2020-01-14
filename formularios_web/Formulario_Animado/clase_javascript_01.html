@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Operaciones JavaScript</title>
+    <script>
+        
+        nombre=prompt("¿Cual es tu nombre?");
+        alert("Tu nombre es: "+nombre);
+        respuesta=confirm("¿Estas seguro de continuar?")
+        if(respuesta)
+            alert("Tu respuesta fue: "+respuesta)
+        else
+            alert("¿NO has respondido?")
+        
+        function sumar(){
+            nro1=document.getElementById("n1").value;
+            nro2=document.getElementById("n2").value;
+            total=parseInt(nro1) + parseInt(nro2)
+            respuesta="La suma es: "+total
+            alert(respuesta);
+            document.getElementById("respuesta").innerHTML=respuesta
+        }
+    </script>
+</head>
+<body>
+    <input id=n1 type="text" placeholder="Ingrese 1er numero">
+    <input id=n2 type="text" placeholder="Ingrese 2dor numero">
+    <input type="button" value="Sumar" onclick="sumar()">
+    <p id="respuesta"></p>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #EDECED;
+}
+.container{
+    width: 1200px;
+    margin: 0px auto;
+    background: white;
+}
+header{
+    width: 100%;
+    background: yellow;
+}
+header img{
+    
+    float: left;
+    border: 1px solid black;
+}
+.menu{   
+    list-style: none;
+    height: 80px;
+}
+.menu li{
+    float: right;
+    padding: 30px 20px;
+}
