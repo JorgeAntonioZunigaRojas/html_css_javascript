@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        window.onload = function() {
+            var inputs=document.getElementsByClassName("formulario_input");
+            /*console.log(inputs);*/
+            /*alert("i: " + inputs.length)*/
+            for (var i=0; i<inputs.length; i++){
+                inputs[i].addEventListener('keyup',function(){
+                    if(this.value.length>=1){
+                        this.nextElementSibling.classList.add('fijar');
+                    }else{
+                        this.nextElementSibling.classList.remove('fijar');
+                    }
+                });
+            }
+        }
+    </script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="formulario">
+        <h1 class="formulario_titulo">Cóntactanos</h1>
+        <input type="text" class="formulario_input">
+        <label for="" class="formulario_label">Nombres</label>
+
+        <input type="text" class="formulario_input">
+        <label for="" class="formulario_label">Correo</label>
+
+        <input type="text" class="formulario_input">
+        <label for="" class="formulario_label">Telefono</label>
+
+        <input type="text" class="formulario_input">
+        <label for="" class="formulario_label">Mensaje</label>
+        <input type="submit" class="formulario_submit">
+    </form>
+</body>
+</html>

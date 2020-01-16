@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        #body{
+            padding-top: 40px;
+            padding-left: 135px;
+        }
+    </style>
+
+    <script>
+        function mostrar_cajas(){
+            cantidad_numeros=parseInt(document.getElementById("cantidad_numeros").value);
+            cajas=""
+            for(i=1;i<cantidad_numeros+1;i++){
+                cajas=cajas+'<input class="numero_ingresado" type="number" id="nro'+String(i)+'" placeholder="Ingrese nro '+String(i)+'"><br>'
+            }
+            cajas=cajas+'<input type="button" value="Mostrar SUMA y PROMEDIO" onclick="calcular()">'
+            document.getElementById('body').innerHTML=cajas
+        }
+        function calcular(){
+            lista_de_numeros=document.getElementsByClassName("numero_ingresado");
+            suma=0
+            promedio=0
+
+            for(i=0; i<lista_de_numeros.length; i++){
+                suma=suma + parseInt(lista_de_numeros[i].value)
+            }
+            promedio=suma/lista_de_numeros.length
+            
+            document.getElementById("idsuma").innerHTML="La suma de los numeros ingresados es: " + String(suma)
+            document.getElementById("idpromedio").innerHTML="El promedio de los numeros ingresados es: " + String(promedio)
+        }
+    </script>
+</head>
+<body>
+    <div id="header">
+        <label for="">Cantidad de numeros</label>
+        <input type="number" id="cantidad_numeros">
+        <input type="button" value="mostrar" onclick="mostrar_cajas()">
+    </div>
+    <div id="body">
+
+    </div>
+    <div class="respuesta">
+        <h2 id="idsuma"></h2>
+        <h2 id="idpromedio"></h2>
+    </div>
+</body>
+</html>
