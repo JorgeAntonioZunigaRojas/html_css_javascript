@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio JQuery</title>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        function mostrar_modulos(){
+            $("#cursos").fadeOut(0)
+            $("#resumen").fadeOut(0)
+            $("#modulos").fadeIn(0)
+        }
+        function mostrar_resumen(){
+            curso_seleccionado=document.getElementsByName("curso").value;
+            
+            document.getElementById("label_curso_seleccionado").innerHTML=curso_seleccionado;
+            $("#modulos").fadeOut(0)
+            $("#resumen").fadeIn(0)
+        }
+        function mostrar_cursos(){
+            $("#modulos").fadeOut(0)
+            $("#cursos").fadeIn(0)
+        }
+    </script>
+</head>
+<body>
+    <div id="cursos">
+        <label for="">Seleccione curso:</label><br>
+        <input type="radio" name="curso" id="PHP" value="PHP"><label for="PHP">PHP</label><br>
+        <input type="radio" name="curso" id="Java" value="Java"><label for="Java">Java</label><br>
+        <input type="radio" name="curso" id=".Net" value=".Net"><label for=".Net">.Net</label><br>
+        <button disabled >Anterior</button>
+        <button id="cb_mostrar_modulos" onclick="mostrar_modulos()" >Siguiente</button>
+    </div>
+    <div  id="modulos" style="display: none;">
+        <label for="">Seleccione Modulos:</label><br>
+
+        <input type="checkbox" name="Basico" id="Basico"><label for="Basico">Basico</label><br>
+        <input type="checkbox" name="Intermedio" id="Intermedio"><label for="Intermedio">Intermedio</label><br>
+        <input type="checkbox" name="Avanzado" id="Avanzado"><label for="Avanzado">Avanzado</label><br>
+
+        <button id="cb_mostrar_cursos" onclick="mostrar_cursos()">Anterior</button>
+        <button id="cb_mostrar_resumen" onclick="mostrar_resumen()">Siguiente</button>
+    </div>
+    <div id="resumen" style="display: none;">
+        <label for="">RESUMEN:</label><br>
+        <label for="" id="label_curso_seleccionado"></label>
+        <button id="cb_mostrar_modulos2" onclick="mostrar_modulos()">Anterior</button>
+        <button id="cb_aceptar">Aceptar</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 04</title>
+    <script type="text/javascript">
+        numeros=[];
+        numero_maximo=0
+        numero_minimo=0
+        flat=0
+        for(i=0;i<5;i++){
+            n=parseInt(prompt("Ingrese N"+String(i+1)+": "));
+            numeros.push(n)
+            if(flat==0){
+                flat=1
+                numero_minimo=n
+                numero_maximo=n
+            }else{
+                if(n>numero_maximo){numero_maximo=n}
+                if(n<numero_minimo){numero_minimo=n}
+            }
+        }
+        console.log(numeros)
+        
+        alert("El numero Mayor es: "+String(numero_maximo)+ "\nEl numero minimo es: "+String(numero_minimo))
+        alert("El numero Mayor es: (Math.max.apply(null,numeros))"+String(Math.max.apply(null,numeros))+ "\nEl numero minimo es: (Math.min.apply(null,numeros))"+String(Math.min.apply(null,numeros)))
+        alert
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

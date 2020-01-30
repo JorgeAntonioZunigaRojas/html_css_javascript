@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio06</title>
+    <script>
+        cantidad_lecturas=parseInt(prompt("Cantidad de lecturas?"))
+        numeros=[]
+        numeros_inv=[]
+        for(i=0;i<cantidad_lecturas;i++){
+            numeros.push(parseInt(prompt("Ingrese N"+String(i+1))))
+        }
+        for(i=cantidad_lecturas-1;i>=0;i--){
+            numeros_inv.push(numeros[i])
+        }
+        console.log(numeros)
+        console.log(numeros_inv)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
